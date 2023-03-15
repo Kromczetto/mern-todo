@@ -1,0 +1,25 @@
+GET http://127.0.0.1:3001/todos
+
+###
+
+POST http://127.0.0.1:3001/todos/new 
+Content-Type: application/json
+
+{
+    "text": "EKSTRAKLASA v3 TODO"
+} 
+
+###
+
+DELETE http://127.0.0.1:3001/todos/delete/640cc374c54a242873af6df7
+
+###
+PATCH  http://127.0.0.1:3001/todos/update/6407b7e9e2de90246723efaa
+Content-Type: application/json
+
+{
+    "text": "dziala?"
+}
+
+###
+GET http://127.0.0.1:3001/todos/complete/6407b7e9e2de90246723efaa
